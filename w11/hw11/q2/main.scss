@@ -1,0 +1,24 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+$colorPic: #e4cfeb;
+.result__box {
+  background-color: $colorPic;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .result__item {
+    width: 30%;
+    height: 40%;
+
+    z-index: 1000;
+  }
+}
+
+.radius__box {
+  display: none;
+}
+
+.submit__btn {
+  font-size: 10px;
+}
