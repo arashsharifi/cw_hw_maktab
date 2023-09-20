@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const myFunc = (x, y, z) => alert(x + y + z);
+
+         const delay = (func, ms) => {
+            return (...args) => setTimeout(func, ms, ...args); // or: setTimeout(() => func(...args), ms); >>>> note that func and ms will be accessed from closure...
+         };
+
+         const f1000 = delay(myFunc, 1000);
+
+         f1000("a", "b", "c");
+      </script>
+   </body>
+</html>
