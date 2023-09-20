@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         // "use strict";
+
+         function f() {
+            alert(this); // ?
+         }
+
+         let user = {
+            g: f.bind(null)
+         };
+
+         user.g(); // will get us window, because in none-strict mode, null cannot be bound to 'this' and the js automatically replaces 'this' in line 13 with window (because it was bound to null).
+         // but in strict-mode: we will get null because in strict mode this can be any value ever!
+      </script>
+   </body>
+</html>

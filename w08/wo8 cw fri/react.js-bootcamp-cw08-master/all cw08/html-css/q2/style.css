@@ -1,0 +1,123 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   direction: rtl;
+   display: grid;
+   grid-template-columns: 5fr 2fr;
+   gap: 20px;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+}
+
+nav span {
+   margin-right: 10px;
+   padding: 10px 13px;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.upload-btn {
+   color: #3a758f;
+   border: 1px solid #3a758f;
+}
+
+.login-btn {
+   color: #9a9ca9;
+}
+
+.login-btn img {
+   vertical-align: middle;
+   margin-left: 5px;
+}
+
+.login-btn:hover {
+   background-color: #f8f8f8;
+}
+
+.upload-btn:hover {
+   opacity: 0.7;
+}
+
+.input-group {
+   padding: 15px;
+   border-radius: 50px;
+   background-color: #f8f8f8;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 50%;
+   border: 1px solid transparent;
+   transition: border 0.2s;
+}
+
+.input-group input {
+   border: 0;
+   outline: 0;
+   background-color: transparent;
+   width: 100%;
+}
+
+.input-group:hover {
+   border: 1px solid #000;
+}
+
+.logo-box {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.tags {
+   padding: 15px 30px;
+   background-color: #f8f8f8;
+   box-shadow: inset 0 1px 4px #0003;
+}
+
+.tag {
+   margin-right: 15px;
+   background-color: #df0f50;
+   padding: 5px 10px;
+   color: #fff;
+   border-radius: 3px;
+   font-size: 15px;
+}
+
+.tags span:first-child {
+   font-weight: bold;
+}
+
+video {
+   width: 100%;
+}
+
+header,
+.tags {
+   grid-column: 1/-1;
+}
+
+main {
+   margin-right: 20px;
+}
+
+aside {
+   margin-left: 20px;
+}
+
+aside img {
+   width: 100%;
+}
+
+aside ul {
+   list-style: none;
+   width: 150px;
+   margin-top: 50px;
+}

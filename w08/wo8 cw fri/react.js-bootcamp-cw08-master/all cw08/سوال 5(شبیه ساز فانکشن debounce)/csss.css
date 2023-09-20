@@ -1,0 +1,14 @@
+.container {
+  width: 700px;
+  height: 50vh;
+  background-color: antiquewhite;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inside {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
