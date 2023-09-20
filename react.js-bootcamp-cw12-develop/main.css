@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
+
+:root {
+  --primary: #114b5f;
+  --secondary: #e4fde1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 45%;
+}
+
+body {
+  font-family: Raleway;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--secondary);
+}
+
+.card-container {
+  width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: space-between;
+  gap: 5.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  color: aliceblue;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border: 2px solid;
+  background-color: var(--primary);
+  border-radius: 6.5rem;
+  font-size: 2.5rem;
+  border: none;
+}
+
+.card__heading {
+  font-size: 3.5rem;
+  white-space: nowrap;
+}
+
+.card__expertise {
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+.card__button {
+  text-align: center;
+  font-size: inherit;
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 1.6rem;
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: rgb(225, 235, 244);
+}
+
+.hidden {
+  display: none;
+}
+
+.book {
+  background-color: var(--primary);
+  padding: 5rem;
+  border-radius: 3rem;
+  color: aliceblue;
+}
+.book__heading {
+  font-size: 3.5rem;
+  color: aliceblue;
+  margin-bottom: 5rem;
+}
+
+.book__inputs {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.book__inputs input,
+.txt-box textarea,
+.book__inputs select {
+  color: var(--secondary);
+  width: 100%;
+  outline: 0;
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  height: 4rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+option {
+  background-color: rgba(109, 136, 105, 0.7);
+  color: rgba(228, 253, 225, 0.7);
+}
+.txt-box textarea {
+  overflow: hidden;
+  height: 15rem;
+}
+
+.book__inputs input::placeholder {
+  color: rgba(228, 253, 225, 0.7);
+}
+
+.book__inputs label,
+.book__details label {
+  color: var(--secondary);
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.txt-box {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  align-items: end;
+}
+.txt-box button {
+  padding: 1.3rem 3rem;
+  border-radius: 1rem;
+  border: 0;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0 0 0 5rem;
+}
+.book__details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.book__details textarea {
+  display: flex;
+  flex-direction: column;
+}
