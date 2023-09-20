@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <div class="audio__container">
+      <div class="audio__box">
+        <div class="audio__image">
+          <img src="zand.jpg" alt="zand vakili" />
+        </div>
+
+        <div class="audio__content">
+          <p class="audio__content--singer">ali zand vakili</p>
+          <span class="audio__content--name">royaye bi tekrar</span>
+          <strong class="audio__content--comment">atash dar ab</strong><br />
+          <p class="audio__content--singer">علی زند وکیلی</p>
+          <span class="audio__content--name">رویای بی تکرار</span>
+          <strong class="audio__content--comment">اتش در اب</strong>
+        </div>
+      </div>
+      <div class="audio__likes">
+        <ion-icon class="audio__likes--icon" name="heart"></ion-icon>
+        <span class="audio__likes--number">3,900</span>
+        <p class="audio__likes--text">likes</p>
+      </div>
+      <i class="fa-duotone fa-play-pause"></i>
+      <div class="audio__progress">
+        <audio controls id="audio-player" preload="auto" loop="false">
+          <source
+            src="Ali Zand Vakili - Fasle Parishani.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+      </div>
+      <div class="time-line">
+        <input
+          type="range"
+          id="time-range"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0"
+        />
+      </div>
+      <div class="but">
+        <div class="but-side">
+          <button value="playAudio" class="play-pause-btn" id="left-btn">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button value="playAudio" class="play-pause-btn" id="play-pause-btn">
+            play,pusee<i id="bi" class="bi bi-play-circle-fill"></i>
+          </button>
+          <button value="playAudio" class="play-pause-btn" id="right-btn">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+        <div class="input-aside">
+          <i class="bi bi-plus-lg"></i>
+          <input type="range" id="volume-range" min="0" max="1" step="0.01" />
+        </div>
+      </div>
+      <!-- <i class="bi bi-play-circle-fill"></i>
+    <i class="bi bi-play-circle-fill"></i> -->
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="player.js"></script>
+  </body>
+</html>
