@@ -1,0 +1,58 @@
+header {
+  width: 400px;
+  height: 350px;
+  padding: 15px;
+  border: 1px solid;
+}
+.continer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.continer input {
+  height: 45px;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.aside {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.aside .email,
+.subject {
+  height: 45px;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.aside .massage {
+  outline: 0;
+  border-radius: 5px;
+}
+.but {
+  display: flex;
+  justify-content: space-around;
+}
+.but input {
+  width: 170px;
+  height: 35px;
+  outline: 0;
+  border-radius: 5px;
+}
+.send {
+  background-color: green;
+}
+.reset {
+  background-color: red;
+}
+input[placeholder] {
+  padding-left: 8px;
+}
+.massage[placeholder] {
+  text-align: start;
+  padding: 30px;
+}

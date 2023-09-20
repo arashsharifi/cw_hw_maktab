@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doz Game</title>
+    <script>
+        // Function to generate a random computer move
+        function generateComputerMove() {
+            // Add your logic to generate a random move for the computer opponent
+            // For simplicity, let's assume the computer randomly selects a number between 1 to 3
+            return Math.floor(Math.random() * 3) + 1;
+        }
+        
+        // Function to handle player's move
+        function handlePlayerMove(move) {
+            // Add your logic to handle the player's move
+            // For simplicity, let's assume you have a function called 'checkWin' to check if the player wins
+            
+            // Let's assume the functions `displayPlayerMove` and `displayComputerMove` display the moves in the UI
+            displayPlayerMove(move);
+            
+            // Generate a random move for the computer
+            var computerMove = generateComputerMove();
+            
+            displayComputerMove(computerMove);
+            
+            // Check if the player wins
+            if (checkWin(move, computerMove)) {
+                // Display a message indicating the player wins
+                alert("Congratulations, you won!");
+            }
+        }
+        
+        // Function to display player's move in the UI
+        function displayPlayerMove(move) {
+            // Create a new HTML element to display the player's move
+            var playerMoveElem = document.createElement("p");
+            playerMoveElem.innerHTML = "Your move: " + move;
+            
+            // Append the element to the game area
+            document.getElementById("gameArea").appendChild(playerMoveElem);
+        }
+        
+        // Function to display computer's move in the UI
+        function displayComputerMove(move) {
+            // Create a new HTML element to display the computer's move
+            var computerMoveElem = document.createElement("p");
+            computerMoveElem.innerHTML = "Computer's move: " + move;
+            
+            // Append the element to the game area
+            document.getElementById("gameArea").appendChild(computerMoveElem);
+        }
+    </script>
+</head>
+<body>
+    <h1>Doz Game</h1>
+    <div id="gameArea">
+        <!-- Display the game moves here -->
+    </div>
+    
+    <h2>Your Turn</h2>
+    <button onclick="handlePlayerMove(1)">Move 1</button>
+    <button onclick="handlePlayerMove(2)">Move 2</button>
+    <button onclick="handlePlayerMove(3)">Move 3</button>
+</body>
+</html>

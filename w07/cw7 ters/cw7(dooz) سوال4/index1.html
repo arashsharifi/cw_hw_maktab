@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+      .container {
+        width: 900px;
+        height: 90vh;
+        margin: 90px auto;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .board {
+        width: 400px;
+        flex-wrap: wrap;
+        display: flex;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-gap: 10px;
+      }
+
+      .reset-btn {
+        width: 40%;
+        display: flex;
+        /* background-color: aqua; */
+        justify-content: end;
+        margin-top: 40px;
+        margin-right: 100px;
+      }
+      .btn {
+        padding: 14px 25px;
+        border-radius: 15px;
+        border: none;
+      }
+      button:hover {
+        box-shadow: 10px 10px 20px;
+      }
+
+      .cell {
+        width: 100px;
+        height: 100px;
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        cursor: pointer;
+      }
+
+      .cell:hover {
+        background-color: #ccc;
+      }
+
+      .message {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div class="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="message"></div>
+      <div class="reset-btn">
+        <button class="btn" id="btnid">reset</button>
+      </div>
+    </div>
+    <script src="./script.js">
+      // JavaScript code goes here
+    </script>
+  </body>
+</html>
