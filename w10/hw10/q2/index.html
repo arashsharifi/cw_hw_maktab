@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row mt-5">
+        <div
+          class="d-flex flex-column gap-3 justify-content-center align-items-center"
+        >
+          <div
+            class="d-flex col-12 col-sm-6 border border-primary rounded justify-content-center align-items-center"
+          >
+            <div id="form" class="col-12 col-lg-6 p-3">
+              <div class="mb-3">
+                <label for="inputKg" class="form-label"
+                  >put your weight in here</label
+                >
+                <input
+                  type="text"
+                  class="form-control h-25"
+                  id="inputKg"
+                  placeholder="add kg"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputCm" class="form-label"
+                  >and your height in here(cm)</label
+                >
+                <input
+                  type="text"
+                  class="form-control fs-6 h-25"
+                  id="inputCm"
+                  placeholder="cm"
+                />
+              </div>
+              <div class="col-12">
+                <button id="btn" type="submit" class="btn btn-primary fs-6">
+                  Sign in
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex col-12 col-sm-6 justify-content-center">
+            <h2 id="result"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

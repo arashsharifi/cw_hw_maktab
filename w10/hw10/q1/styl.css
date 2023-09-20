@@ -1,0 +1,18 @@
+.img-info {
+  width: 2rem;
+  height: 2rem;
+}
+.font-size {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+@media (max-width: 992px) {
+  .logo-bottoms {
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}
+
+.myrounded {
+  border-top-left-radius: 2.2rem;
+}

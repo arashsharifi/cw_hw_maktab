@@ -1,0 +1,50 @@
+@import"./node_modules/bootstrap/scss/bootstrap.scss";
+
+$arashColor1:#B1D9DB;
+$arashColor2:#5EC6C9;
+$arashColor3:#F3F7F7;
+$arashColor4:#99DBDF;
+$arashColor5:#D0D0D0;
+$arashColor6:#F2F4F4;
+$arashColor7:#ECE9EC;
+
+
+
+
+.arashColor1{
+    color: #B1D9DB;
+}
+.arashColor1bg{
+  background-color: $arashColor1;
+}
+.arashColor2bg{
+    background-color: $arashColor2;
+}
+.arashColor3{
+    color: $arashColor3;
+}
+.arashColor4{
+    color: $arashColor4;
+}
+.arashColor5{
+    color: $arashColor5;
+}
+.arashColor6bg{
+    background-color: $arashColor6;
+}
+.arashColor7bg{
+    background-color:$arashColor7;
+}
+
+input{
+    outline: 0;
+    border: none;
+}
+.z-index{
+    z-index: $zindex-dropdown;
+}
+
+
+
+
+

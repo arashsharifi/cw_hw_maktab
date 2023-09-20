@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Question 1</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body class="m-0 b">
+      <!-- hamburger-icon -->
+      <i class="bi bi-list display-1 position-absolute m-3 menu-btn"></i>
+
+      <!-- main content -->
+      <div class="container">
+         <div class="row">
+            <div class="col vh-100 d-flex flex-column justify-content-center align-items-center display-1">
+               <i class="bi bi-person"></i>
+               <p class="my-5">Side Out Menu</p>
+               <button class="btn btn-success btn-lg w-75 menu-btn">Open it</button>
+            </div>
+         </div>
+      </div>
+
+      <!-- hamburger menu content -->
+      <div id="hamburger-menu" class="w-50 vh-100 position-fixed top-0 bg-secondary d-flex flex-column z-1 burger-menu close">
+         <div class="row bg-light">
+            <div class="col py-5 px-4">
+               <img src="images/3740567088.png" alt="" class="w-25 mb-3" />
+               <p>Emily Smith</p>
+               <p class="me-2">User 03594039043</p>
+            </div>
+         </div>
+
+         <div class="row flex-grow-1">
+            <div class="col bg-success-subtle d-flex flex-column justify-content-between p-4">
+               <ul class="ps-0">
+                  <li class="border-bottom border-dark list-unstyled p-3">item 1</li>
+                  <li class="border-bottom border-dark list-unstyled p-3">item 2</li>
+                  <li class="border-bottom border-dark list-unstyled p-3">item 3</li>
+                  <li class="border-bottom border-dark list-unstyled p-3">item 4</li>
+                  <li class="border-bottom border-dark list-unstyled p-3">item 5</li>
+               </ul>
+               <button class="btn btn-success">About us</button>
+            </div>
+         </div>
+      </div>
+
+      <!-- background overlay -->
+      <div id="overlay" class="vw-100 vh-100 bg-black opacity-0 position-fixed top-0 d-none"></div>
+
+      <script src="script.js"></script>
+   </body>
+</html>

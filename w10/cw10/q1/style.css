@@ -1,0 +1,15 @@
+.burger-menu {
+   transition: transform 0.2s ease-in-out;
+}
+
+.burger-menu.close {
+   transform: translateX(-55vw);
+}
+
+.burger-menu.slide {
+   transform: translateX(20px);
+}
+
+#overlay {
+   transition: opacity 0.2s ease-in-out;
+}
