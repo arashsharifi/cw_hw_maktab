@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "vazir";
+    src: url(../dist/font/Vazir.eot);
+    src: url("../dist/font/Vazir.eot?iefix") format("embedded-opentype"),
+      url("../dist/font/Vazir.woff2") format("woff2"),
+      url("../dist/font/Vazir.woff") format("woff"),
+      url("../dist/font/Vazir.ttf") format("ttf");
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+

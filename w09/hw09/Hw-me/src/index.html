@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />
+    </head>
+    <body class="box-border relative font-vazir flex flex-col ">
+      <section dir="rtl" class="border-t-[1px] border-b-[1px] mt-3 text-sm hidden sm:hidden md:block">
+        <div class="search-lg w-[87%] m-auto">
+          <ul class="flex justify-between items-center">
+            <li class="border-l-[3px] mr-4 w-[6%] h-10   ">
+              <img class="h-12 w-12" src="./image/1693297044665.png" alt="noob">
+            </li>
+            <li class="flex  justify-items-center items-center py-1 px-2 transition duration-300 ease-in-out hover:bg-gray-100 rounded-md">
+              <i class="fa-solid fa-location-dot text-gray-300 ml-2"></i>
+               <p class="ml-1 text-gray-400">تهران</p>
+            </li>
+            <li>
+              <select class="text-gray-400" name="pets" id="pet-select">
+                <option value="">دسته ها</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Goldfish</option>
+              </select>
+            </li>
+            <li class="flex items-center bg-gray-100 w-[35%]">
+              <i class="fa-solid fa-magnifying-glass text-gray-400 px-2"></i>
+              <input
+                type="search"
+                name="imput"
+                class="w-[89%] h-8 text-gray-400 bg-gray-100"
+                placeholder="جستجو برای همه آگهی ها"
+              />
+            </li>
+            <li  class="text-gray-400 flex  justify-items-center items-center py-1 px-2 transition duration-300 ease-in-out hover:bg-gray-100 rounded-md mr-11">
+              <i class="fa-solid fa-user ml-2"></i>
+              <p class="text-sm ">دیوارمن</p>
+            </li>
+            <li  class="text-gray-400 flex  justify-items-center items-center py-1 px-2 transition duration-300 ease-in-out hover:bg-gray-100 rounded-md">
+              <i class="fa-regular fa-comment ml-2"></i>
+              <p>چت</p>
+            </li>
+            <li  class="text-gray-400 flex  justify-items-center items-center py-1 px-2 transition duration-300 ease-in-out hover:bg-gray-100 rounded-md">
+              <p>پشتیبانی</p>
+            </li>
+            <li>
+            <button class="bg-[#8f3228] text-white p-2 rounded-md whitespace-nowrap transition duration-300 ease-in-out hover:bg-[#a43d32]"> ثبت آگهی </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="all-container lg:w-[87%] m-auto text-sm" dir="rtl">
+        <header class=" sm:hidden">
+          <div
+            class="saerch flex items-center justify-between m-5 h-12 bg-gray-100 text-lg"
+          >
+            <div class="input-box w-[80%] h-11 flex items-center">
+              <i class="fa-solid fa-magnifying-glass text-gray-400 px-2"></i>
+              <input
+                type="search"
+                name="imput"
+                class="w-[89%] h-8 text-gray-400 bg-gray-100"
+                placeholder="جستجو برای همه آگهی ها"
+              />
+            </div>
+            <div
+              class="icon-box flex justify-center items-center ml-3 w-[17%] h-8 border-r-2 border-gray-300"
+            >
+              <p class="ml-1 text-gray-400">تهران</p>
+              <i class="fa-solid fa-location-dot text-gray-300"></i>
+            </div>
+          </div>
+         </header>
+      
+        <!-- <section> -->
+          <ul class="flex gap-3 overflow-x-scroll overflow-y-hidden py-2 text-sm border-t-[1px] border-b-[1px] border-gray-300 whitespace-nowrap min-w-[400px]  shadow-md">
+                <li
+                class="flex items-center mr-7 border border-gray-400 py-1 px-3 rounded-full"
+              >
+                <i class="fa-solid fa-sliders ml-2 text-gray-400"></i>
+                <p class="text-gray-400">فیلتر ها</p>
+              </li>
+              <li
+              class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+            >
+              <i class="fa-solid fa-list-ul ml-2 text-gray-400"></i>
+              <p class="text-gray-400">دسته ها</p>
+            </li>
+            <li
+            class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+          >
+            <p class="text-gray-400">موبایل</p>
+          </li>
+            <li
+            class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+          >
+            <p class="text-gray-400">موبایل</p>
+          </li>
+            <li
+            class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+          >
+            <p class="text-gray-400">موبایل</p>
+          </li>
+            <li
+            class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+          >
+            <p class="text-gray-400">موبایل</p>
+          </li>
+            <li
+            class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+          >
+            <p class="text-gray-400">موبایل</p>
+          </li>
+            <li
+            class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+          >
+            <p class="text-gray-400">موبایل</p>
+          </li>
+            <li
+            class="flex items-center border border-gray-400 py-1 px-3 rounded-full"
+          >
+            <p class="text-gray-400">موبایل</p>
+          </li>
+       
+          </ul>
+        <!-- </section> -->
+        <main class="flex gap-2">
+          <aside class=" max-lg:hidden mt-4 w-[23%]">
+           
+            <ul class="flex flex-col gap-5 w-[90%] mr-5">
+              <li>
+                <p>دسته ها </p>
+              </li>
+
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-solid fa-house text-xl self-end ml-3"></i>
+                <p>املاک</p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-solid fa-car text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+               <li class="flex text-gray-400 transition duration-300 ease-in-out hover:text-black ">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <p>وسایل نقلیه </p>
+               </li>
+            
+               <li class="border-t-[1px] pt-3 ">
+            
+                  <select class="text-gray-400 transition duration-300 ease-in-out hover:text-black" name="pets" id="pet-select">
+                    <option value="">دسته ها</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                  </select>
+                
+               </li>
+               <li class="border-t-[1px] pt-3">
+             
+                  <select class="text-gray-400 transition duration-300 ease-in-out hover:text-black" name="pets" id="pet-select">
+                    <option value="">دسته ها</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                  </select>
+                
+               </li>
+               <li class="border-t-[1px] pt-3">
+             
+                  <select class="text-gray-400 transition duration-300 ease-in-out hover:text-black" name="pets" id="pet-select">
+                    <option value="">دسته ها</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                  </select>
+                
+               </li>
+            </ul>
+          </aside>
+          <div class="all card grid  max-sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4 "
+            >
+              <div class="content  flex flex-col gap-4 mr-4 text-sm">
+                <h1 class="text-lg text-[#39404b] font-bold">
+                  واحد مبل75 متری
+                </h1>
+                <div class="flex">
+                  <span>175,000,000</span>
+                  <p>تومان</p>
+                </div>
+                <p>رهن کامل</p>
+                <p>مشاور املاک یکتا</p>
+              </div>
+              <div class="img-box  flex p-4">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <img class="h-[7rem] w-[6rem] rounded-md" src="./image/1.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                <h1 class="text-lg text-[#39404b] font-bold">
+                  لوازم قاشق چنگال
+                </h1>
+                <div class="flex">
+                  <span>5,000,000</span>
+                  <p>تومان</p>
+                </div>
+                <p>جنس برنز</p>
+                <p>شهرک اکباتان</p>
+              </div>
+              <div class="img-box flex p-4">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <img class="h-[7rem] w-[6rem] rounded-md" src="./image/2.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                <h1 class="text-lg text-[#39404b] font-bold">ضبط صوت میری</h1>
+                <div class="flex">
+                  <span>9,000,000</span>
+                  <p>تومان</p>
+                </div>
+                <p>کار کرده ترتمیز</p>
+                <p>ضبط صوت میری شهرک بنفشه</p>
+              </div>
+              <div class="img-box flex p-4">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <img class="h-[7rem] w-[6rem] rounded-md" src="./image/3.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                <h1 class="text-lg text-[#39404b] font-bold">
+                  واحد مبل105 متری تک واحدی
+                </h1>
+                <div class="flex">
+                  <span>75,000,000,000</span>
+                  <p>تومان</p>
+                </div>
+                <p>تک واحدی کلید نخورده</p>
+                <p>املاک ونوس تجریش</p>
+              </div>
+              <div class="img-box flex p-4">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <img class="h-[7rem] w-[6rem] rounded-md" src="./image/4.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                <h1 class="text-lg text-[#39404b] font-bold">متور ژاپنی</h1>
+                <div class="flex">
+                  <span>4,000,000</span>
+                  <p>تومان</p>
+                </div>
+                <p>تمیز</p>
+                <p>سوفی آباد</p>
+              </div>
+              <div class="img-box flex p-4">
+                <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                <img class="h-[7rem] w-[6rem] rounded-md" src="./image/5.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                  <h1 class="text-lg text-[#39404b] font-bold">
+                    واحد مبل175 متری تک واحدی
+                  </h1>
+                  <div class="flex">
+                    <span>55,000,000,000</span>
+                    <p>تومان</p>
+                  </div>
+                  <p>تک واحدی کلید نخورده</p>
+                  <p>املاک ونوس تجریش</p>
+                </div>
+                <div class="img-box flex p-4">
+                  <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                  <img class="h-[7rem] w-[6rem] rounded-md" src="./image/6.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                  <h1 class="text-lg text-[#39404b] font-bold">
+                    واحد مبل175 متری تک واحدی
+                  </h1>
+                  <div class="flex">
+                    <span>55,000,000,000</span>
+                    <p>تومان</p>
+                  </div>
+                  <p>تک واحدی کلید نخورده</p>
+                  <p>املاک ونوس تجریش</p>
+                </div>
+                <div class="img-box flex p-4">
+                  <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                  <img class="h-[7rem] w-[6rem] rounded-md" src="./image/7.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                  <h1 class="text-lg text-[#39404b] font-bold">
+                    واحد مبل175 متری تک واحدی
+                  </h1>
+                  <div class="flex">
+                    <span>55,000,000,000</span>
+                    <p>تومان</p>
+                  </div>
+                  <p>تک واحدی کلید نخورده</p>
+                  <p>املاک ونوس تجریش</p>
+                </div>
+                <div class="img-box flex p-4">
+                  <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                  <img class="h-[7rem] w-[6rem] rounded-md" src="./image/8.jpg" alt="noob" />
+              </div>
+            </div>
+            <div
+              class="cardItem flex justify-between items-center border-gray-200 border-[1px] text-gray-400 m-4"
+            >
+              <div class="content w-[45%] flex flex-col gap-4 mr-4">
+                  <h1 class="text-lg text-[#39404b] font-bold">
+                    واحد مبل175 متری تک واحدی
+                  </h1>
+                  <div class="flex">
+                    <span>55,000,000,000</span>
+                    <p>تومان</p>
+                  </div>
+                  <p>تک واحدی کلید نخورده</p>
+                  <p>املاک ونوس تجریش</p>
+                </div>
+                <div class="img-box flex p-4 ml-4">
+                  <i class="fa-regular fa-comment text-xl self-end ml-3"></i>
+                  <img class="h-[7rem] w-[6rem] rounded-md " src="./image/9.jpg" alt="noob" />
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="lg:hidden">
+          <div
+            class="flex fixed bottom-0 right-0 w-full justify-evenly items-center bg-[#fafafa] border-t-[1px] text-gray-400"
+          >
+            <div class="flex flex-col items-center justify-center">
+              <img class="h-8 w-8" src="./image/1693297044665.png" alt="" />
+              <p class="text-red-700 text-sm">اگهی ها</p>
+            </div>
+            <div class="flex flex-col items-center justify-evenly">
+              <i class="fa-solid fa-list"></i>
+              <p class="text-sm">چت</p>
+            </div>
+            <div class="flex flex-col items-center justify-evenly">
+              <i class="fa-solid fa-plus"></i>
+              <p class="text-sm">ثبت آگهی</p>
+            </div>
+            <div class="flex flex-col items-center justify-evenly">
+              <i class="fa-solid fa-comment"></i>
+              <p class="text-sm">دسته ها</p>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+              <i class="fa-solid fa-user"></i>
+              <p class="text-sm">دیوارمن</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

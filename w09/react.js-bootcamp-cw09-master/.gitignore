@@ -1,0 +1,7 @@
+tailwind/q1/node_modules
+tailwind/q2/node_modules
+tailwind/q3/node_modules
+
+*.pdf
+*.svg
+*.png
