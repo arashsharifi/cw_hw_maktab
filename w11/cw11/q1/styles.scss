@@ -1,0 +1,261 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@font-face {
+  font-family: IranSans;
+  src: url("http://mincdn.ir/font/IranSans/IRANSansWeb_Light.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: IranSans;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #444;
+  color: #fff;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  i {
+    color: #888;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.nav li {
+  padding: 2rem;
+  border-right: 1px solid #666;
+  &:hover {
+    background-color: lighten(#444, 10%);
+  }
+}
+
+.login-user {
+  li {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  li:last-child {
+    padding: 2rem 1rem;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  width: 7rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.search-box {
+  background-image: linear-gradient(
+    78deg,
+    rgba(52, 178, 214, 1) 0%,
+    rgba(27, 187, 159, 1) 100%
+  );
+  padding: 2rem;
+  color: #fff;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  p:first-of-type {
+    font-size: 2.5rem;
+  }
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  padding: 2rem 0;
+
+  input,
+  select {
+    flex-grow: 1;
+    flex-basis: 50px;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+  }
+
+  button {
+    padding: 0 2rem;
+    border-radius: 3px;
+    background-color: #ffd68a;
+    border: 0;
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .slid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.spiner {
+  margin: 4rem 0;
+
+  text-align: center;
+}
+@mixin button {
+  padding: 0.4rem 2.4rem;
+  margin: 0 0.9rem;
+  transition: 0.5s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.wrapper {
+  font-size: large;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+
+  .left-side {
+    display: flex;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-left: 2rem;
+    }
+    .right-side {
+      display: flex;
+      align-items: center;
+    }
+    .sing-up {
+      @include button();
+      background-color: #1dd3af;
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: lighten(#1dd3af, 10%);
+      }
+    }
+    .login {
+      @include button();
+      background-color: transparent;
+      color: #1dd3af;
+      border: 2px solid #1dd3af;
+
+      &:hover {
+      }
+    }
+  }
+}
+
+.last-ads {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  span {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      color: #1dd3af;
+    }
+  }
+}
+.ads-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  gap: 2rem;
+  .card {
+    font-size: larger;
+    display: flex;
+    gap: 2rem;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 5px;
+    .img-card {
+      img {
+        width: 5rem;
+      }
+    }
+    .card-content {
+      // width: 100%;
+      flex-grow: 1;
+      h3 {
+        font-size: larger;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        margin-bottom: 1.3rem;
+        &:last-child {
+          text-align: end;
+        }
+      }
+    }
+  }
+}

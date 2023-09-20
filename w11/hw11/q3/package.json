@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },"scripts": {
+    "sass":"sass -w main.scss css/main.css"
+  }
+}

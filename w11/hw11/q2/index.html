@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-6 d-flex justify-content-center mt-5">
+          <form class="row g-3" id="form">
+            <div class="col-md-4 d-flex flex-column">
+              <label for="inputState" class="form-label">State</label>
+              <select id="select" id="inputState" class="form-select">
+                <option selected>choosShape</option>
+                <option value="1">circle</option>
+                <option value="2">Square</option>
+                <option value="3">Rectangle</option>
+                <option value="4">cylinder</option>
+              </select>
+              <button
+                id="checkSecelted"
+                class="submit__btn col-5 btn btn-outline-success mt-2"
+              >
+                click me
+              </button>
+            </div>
+            <div id="redius-box" class="col-md-12 d-flex align-items-center">
+              <label for="inputEmail4" class="form-label me-3">Radius: </label>
+              <input type="text" class="form-control" id="Radius" />
+            </div>
+            <div id="width-box" class="col-md-12 d-flex align-items-center">
+              <label for="inputPassword4" class="form-label me-3">width</label>
+              <input type="text" class="form-control" id="Width" />
+            </div>
+
+            <div id="heigth-box" class="col-md-12 d-flex align-items-center">
+              <label for="inputCity" class="form-label me-3">Heigth</label>
+              <input type="text" class="form-control" id="Heigth" />
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-outline-secondary">
+                click
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="result__box col-6 d-flex mt-5 colorPice">
+          <div class="result__item"><h1 id="result"></h1></div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
