@@ -1,0 +1,133 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. E Hawke",
+      "phoneNumber": "0811328786",
+      "expertise": "General Practitioner",
+      "times": [
+        {
+          "date": 1683805500000,
+          "patient_id": false
+        },
+        {
+          "date": 1683809100000,
+          "patient_id": false
+        },
+        {
+          "date": 1683812700000,
+          "patient_id": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. J Cameron",
+      "phoneNumber": "0811328786",
+      "expertise": "Pediatrician",
+      "times": [
+        {
+          "date": 1683805500000,
+          "patient_id": false
+        },
+        {
+          "date": 1683809100000,
+          "patient_id": false
+        },
+        {
+          "date": 1683812700000,
+          "patient_id": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dr. B Smith",
+      "phoneNumber": "0811328786",
+      "expertise": "Oncologist",
+      "times": [
+        {
+          "date": 1683805500000,
+          "patient_id": false
+        },
+        {
+          "date": 1683809100000,
+          "patient_id": false
+        },
+        {
+          "date": 1683812700000,
+          "patient_id": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dr. R scott ",
+      "phoneNumber": "0811328786",
+      "expertise": "Cardiologist",
+      "times": [
+        {
+          "date": 1683805500000,
+          "patient_id": false
+        },
+        {
+          "date": 1683809100000,
+          "patient_id": false
+        },
+        {
+          "date": 1683812700000,
+          "patient_id": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dr. G pierce",
+      "phoneNumber": "0811328786",
+      "expertise": "Gynecologist",
+      "times": [
+        {
+          "date": 1683805500000,
+          "patient_id": false
+        },
+        {
+          "date": 1683809100000,
+          "patient_id": false
+        },
+        {
+          "date": 1683812700000,
+          "patient_id": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Dr. M Kennedy",
+      "phoneNumber": "0811328786",
+      "expertise": "Neurologist",
+      "times": [
+        {
+          "date": 1683805500000,
+          "patient_id": false
+        },
+        {
+          "date": 1683809100000,
+          "patient_id": false
+        },
+        {
+          "date": 1683812700000,
+          "patient_id": false
+        }
+      ]
+    }
+  ],
+  "patients": [
+    {
+      "email": "arashamirsharifi1970@gmail.com",
+      "fullName": "arashfgdf",
+      "time": "1683805500000",
+      "txt": "",
+      "id": 1695044731123
+    }
+  ]
+}
